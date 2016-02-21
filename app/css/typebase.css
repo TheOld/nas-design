@@ -1,0 +1,217 @@
+﻿
+
+@font-face {
+    font-family: 'museo_sans_900';
+    src: url('../fonts/museosans_6-webfont.eot');
+    src: url('../fonts/museosans_6-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/museosans_6-webfont.woff2') format('woff2'), url('../fonts/museosans_6-webfont.woff') format('woff'), url('../fonts/museosans_6-webfont.ttf') format('truetype'), url('../fonts/museosans_6-webfont.svg#museo_sans900') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+
+@font-face {
+    font-family: 'museo_sans_100';
+    src: url('../fonts/museosans_7-webfont.eot');
+    src: url('../fonts/museosans_7-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/museosans_7-webfont.woff2') format('woff2'), url('../fonts/museosans_7-webfont.woff') format('woff'), url('../fonts/museosans_7-webfont.ttf') format('truetype'), url('../fonts/museosans_7-webfont.svg#museo_sans100') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+/*#region PT SANS */
+
+@font-face {
+    font-family: 'pt_sans_bold';
+    src: url('../fonts/PTC75F-webfont.eot');
+    src: url('../fonts/PTC75F-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/PTC75F-webfont.woff') format('woff'), url('../fonts/PTC75F-webfont.ttf') format('truetype'), url('../fonts/PTC75F-webfont.svg#pt_sans_captionbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'pt_sans_regular';
+    src: url('../fonts/PTC55F-webfont.eot');
+    src: url('../fonts/PTC55F-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/PTC55F-webfont.woff') format('woff'), url('../fonts/PTC55F-webfont.ttf') format('truetype'), url('../fonts/PTC55F-webfont.svg#pt_sans_captionregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'pt_sans_narrow_bold';
+    src: url('../fonts/PTN77F-webfont.eot');
+    src: url('../fonts/PTN77F-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/PTN77F-webfont.woff') format('woff'), url('../fonts/PTN77F-webfont.ttf') format('truetype'), url('../fonts/PTN77F-webfont.svg#pt_sans_narrowbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'pt_sans_narrow_regular';
+    src: url('../fonts/PTN57F-webfont.eot');
+    src: url('../fonts/PTN57F-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/PTN57F-webfont.woff') format('woff'), url('../fonts/PTN57F-webfont.ttf') format('truetype'), url('../fonts/PTN57F-webfont.svg#pt_sans_narrowregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'pt_sans_bold';
+    src: url('../fonts/PTS75F-webfont.eot');
+    src: url('../fonts/PTS75F-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/PTS75F-webfont.woff') format('woff'), url('../fonts/PTS75F-webfont.ttf') format('truetype'), url('../fonts/PTS75F-webfont.svg#pt_sansbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'pt_sans_regular';
+    src: url('../fonts/PTS55F-webfont.eot');
+    src: url('../fonts/PTS55F-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/PTS55F-webfont.woff') format('woff'), url('../fonts/PTS55F-webfont.ttf') format('truetype'), url('../fonts/PTS55F-webfont.svg#pt_sansregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+
+.museo-100 {
+    font-family: museo_sans_100, sans-serif;
+}
+
+.museo-900 {
+    font-family: museo_sans_900, sans-serif;
+}
+
+.pt-sans-regular {
+    font-family: pt_sans_regular, sans-serif;
+}
+
+.pt-sans-narrow {
+    font-family: pt_sans_narrow_regular, sans-serif;
+}
+
+.pt-sans-narrow-bold {
+    font-family: pt_sans_narrow_bold, sans-serif;
+}
+
+.pt-sans-bold {
+    font-family: pt_sans_bold, sans-serif;
+}
+
+
+/*! Typebase.less v0.1.0 | MIT License */
+
+/* Setup */
+html {
+  /* Change default typefaces here */
+  font-family: pt_sans_regular, sans-serif;
+  font: normal 112.5%/1.65 serif !important; /* base font size 18px with 1.65 line-height */
+  -webkit-font-smoothing: antialiased;
+}
+
+
+/* Copy & Lists */
+/*p {
+  line-height: 1.5rem;
+  margin-top: 1.5rem;
+  margin-bottom: 0;
+}*/
+
+/**
+ *
+ * =======================================================================
+   Paragraphs and Indentation
+ * =======================================================================
+ */
+
+p {
+    margin: auto auto 1.5em; /* bottom margin for paragraphs */
+}
+
+    p + p {
+        text-indent: 1.5em; /* indent subsequent paragraphs */
+        margin-top: -1.5em; /* no top margin on subsequent paragraphs */
+    }
+
+
+ul,
+ol {
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+ul li,
+ol li {
+  line-height: 1.5rem;
+}
+ul ul,
+ol ul,
+ul ol,
+ol ol {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+blockquote {
+  line-height: 1.5rem;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+/* Headings */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  /* Change heading typefaces here */
+  /*font-family: sans-serif;*/
+  font-family: pt_sans_regular, sans-serif;
+  margin-top: 1.5rem;
+  margin-bottom: 0;
+  line-height: 1.5rem;
+}
+h1 {
+  font-size: 4.242rem;
+  line-height: 4.5rem;
+  margin-top: 3rem;
+}
+h2 {
+  font-size: 2.828rem;
+  line-height: 3rem;
+  margin-top: 3rem;
+}
+h3 {
+  font-size: 1.414rem;
+}
+h4 {
+  font-size: 0.707rem;
+}
+h5 {
+  font-size: 0.4713333333333333rem;
+}
+h6 {
+  font-size: 0.3535rem;
+}
+/* Tables */
+table {
+  margin-top: 1.5rem;
+  border-spacing: 0px;
+  border-collapse: collapse;
+}
+table td,
+table th {
+  padding: 0;
+  line-height: 33px;
+}
+/* Code blocks */
+code {
+  vertical-align: bottom;
+}
+/* Leading paragraph text */
+.lead {
+  font-size: 1.414rem;
+}
+/* Hug the block above you */
+.hug {
+  margin-top: 0;
+}

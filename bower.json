@@ -1,0 +1,27 @@
+{
+  "name": "processo_projetual_nas_design",
+  "description": "Processo Projetual NAS Design",
+  "main": "main.js",
+  "authors": [
+    "Kammiri Corinaldesi aros & Leandro Rodrigues"
+  ],
+  "license": "ISC",
+  "moduleType": [
+    "node"
+  ],
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "velocity": "^1.2.3",
+    "typeplate-starter-kit": "^2.1.0",
+    "font-awesome": "fontawesome#^4.5.0",
+    "bootstrap": "^3.3.6"
+  }
+}

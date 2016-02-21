@@ -1,0 +1,142 @@
+.icon {
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-image: url(/dist/images/sprite.svg);
+}
+.icon-act-conception {
+    width: 42px;
+    height: 42px;
+    background-position: 0 0;
+}
+.icon-act-feedback {
+    width: 42px;
+    height: 42px;
+    background-position: -58px 0;
+}
+.icon-act-guide {
+    width: 42px;
+    height: 42px;
+    background-position: -116px 0;
+}
+.icon-act-presentation {
+    width: 42px;
+    height: 42px;
+    background-position: -174px 0;
+}
+.icon-check {
+    width: 42px;
+    height: 42px;
+    background-position: -232px 0;
+}
+.icon-do-closing {
+    width: 42px;
+    height: 42px;
+    background-position: -290px 0;
+}
+.icon-do {
+    width: 42px;
+    height: 42px;
+    background-position: -348px 0;
+}
+.icon-do-open-cicle {
+    width: 42px;
+    height: 42px;
+    
+    background-position: -406px 0;
+}
+.icon-eye {
+    width: 42px;
+    height: 42px;
+    background-position: -464px 0;
+}
+.icon-feel-guide {
+    width: 42px;
+    height: 42px;
+    background-position: -522px 0;
+}
+.icon-limit {
+    width: 42px;
+    height: 42px;
+    background-position: -580px 0;
+}
+.icon-tool-5 {
+    width: 42px;
+    height: 42px;
+    background-position: -638px 0;
+}
+.icon-tool-brainstorming {
+    width: 42px;
+    height: 42px;
+    background-position: -696px 0;
+}
+.icon-tool-brainwritting {
+    width: 42px;
+    height: 42px;
+    background-position: -754px 0;
+}
+.icon-tool-briefing {
+    width: 42px;
+    height: 42px;
+    background-position: -812px 0;
+}
+.icon-tool-concept-panel {
+    width: 42px;
+    height: 42px;
+    background-position: -870px 0;
+}
+.icon-tool-conceptual-map {
+    width: 42px;
+    height: 42px;
+    background-position: 0 -58px;
+}
+.icon-tool-fotw {
+    width: 42px;
+    height: 42px;
+    background-position: -58px -58px;
+}
+.icon-tool-interview {
+    width: 42px;
+    height: 42px;
+    background-position: -116px -58px;
+}
+.icon-tool-mental-map {
+    width: 42px;
+    height: 42px;
+    background-position: -174px -58px;
+}
+.icon-tool-mockups {
+    width: 42px;
+    height: 42px;
+    background-position: -232px -58px;
+}
+.icon-tool-pic {
+    width: 42px;
+    height: 42px;
+    background-position: -290px -58px;
+}
+.icon-tool-seminary {
+    width: 42px;
+    height: 42px;
+    background-position: -348px -58px;
+}
+.icon-tool-swot {
+    width: 42px;
+    height: 42px;
+    background-position: -406px -58px;
+}
+.icon-tool-video {
+    width: 42px;
+    height: 42px;
+    background-position: -464px -58px;
+}
+.icon-tool-video-opinions {
+    width: 42px;
+    height: 42px;
+    background-position: -522px -58px;
+}
+.icon-tool-visual-panel {
+    width: 42px;
+    height: 42px;
+    background-position: -580px -58px;
+}
+

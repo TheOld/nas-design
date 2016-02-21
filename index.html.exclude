@@ -1,0 +1,65 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Processo Projetual NAS Design</title>
+    <link href="fonts/font-awesome.min.css" rel="stylesheet" />
+    <link href="css/bulma.min.css" rel="stylesheet" />
+    <link href="css/typeplate.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" />
+</head>
+<body>
+    <a>
+        <i class=""></i>
+    </a>
+    <nav>
+
+    </nav>
+    <div class="svg-container">
+        <svg version="1.1"
+             id="shapes"
+             xmlns="http://www.w3.org/2000/svg"
+             xmlns:xlink="http://www.w3.org/1999/xlink" x="10px" y="10px"
+             viewBox="0 0 227 227" xml:space="preserve">
+            <g id="square">
+	
+            <linearGradient id="squareGradient" gradientUnits="userSpaceOnUse" x1="77.677" y1="188.225" x2="150.227" y2="188.225" gradientTransform="matrix(-1 0 0 -1 220.9041 369.45)">
+            <stop offset="0" style="stop-color:#FF0000" />
+            <stop offset="0.5" style="stop-color:#ED047B" />
+            <stop offset="1" style="stop-color:#A3238E" />
+	                        </linearGradient>
+            	                <!--style="fill:none;stroke:url(#squareGradient);stroke-width:2;stroke-miterlimit:10;"-->
+            <rect id="square-shape" style="stroke: url(#squareGradient);" x="78.677" y="152.95"
+                  class="shape square"
+                  width="70.55" height="70.55" />
+                    </g>
+              
+            <g id="octagon">
+            	 
+            <linearGradient id="XMLID_7_" gradientUnits="userSpaceOnUse"  x1="55.5" y1="114.5" x2="223.5" y2="114.5"  gradientTransform="matrix(4.489659e-011 1 -1 4.489659e-011 221 1)">
+            <stop offset="0" style="stop-color:#5F4B9F" />
+            <stop offset="0.5" style="stop-color:#0099AA" />
+            <stop offset="1" style="stop-color:#00BF47" />
+	                        </linearGradient>
+            <polygon id="oct-shape" style="stroke: url(#XMLID_7_);" class="shape octagon" points="30.5,106.349 
+		    80.344,57.5 148.671,57.5 196.5,106.349 196.5,174.656 148.671,223.5 80.344,223.5 30.5,174.656 	" />
+                    </g>
+            <g id="circle">
+            <linearGradient id="XMLID_6_" gradientUnits="userSpaceOnUse" x1="-0.9444" y1="109.9444" x2="221.1667" y2="109.9444">
+            <stop offset="0" style="stop-color:#00AA0B" />
+            <stop offset="0.5" style="stop-color:#E4E517" />
+            <stop offset="1" style="stop-color:#FBB03B" />
+	                        </linearGradient>
+	
+            <circle id="circle-shape" style="stroke: url(#XMLID_6_);" class="shape circle" cx="113.611" cy="113.444" r="110.056" />
+                    </g>
+    </svg>
+    </div>
+
+
+    <script src="js/snap.svg-min.js"></script>
+    <script src="js/velocity.min.js"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>
