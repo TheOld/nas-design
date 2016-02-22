@@ -240,7 +240,7 @@ $(document).ready(function () {
                 elements: $toolDetailsContainer,
                 properties: 'transition.slideUpIn',
                 options: { duration: 220, easing: customEasing },
-                //sequenceQueue: true
+                sequenceQueue: true
             },
             {
                 elements: $toolData,
