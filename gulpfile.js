@@ -27,15 +27,16 @@ gulp.task('scripts', function () {
     return gulp.src(['./bower_components/jquery/dist/jquery.js',
         './bower_components/bootstrap/dist/bootstrap.min.js',
         './bower_components/velocity/*.js',
+        './bower_components/mixitup/src/*.js',
         './app/js/main.js'])
       .pipe(concat('main.js'))
         .pipe(rename({ suffix: '.min' }))
-        //.pipe(uglify())
+        .pipe(uglify())
         .pipe(gulp.dest('dist/js/'));
 });
 
 
-gulp.task('image', () => {
+gulp.task('image', function() {
     return gulp.src('./app/images/*')
 		//.pipe(imagemin({
 		//    progressive: true,
@@ -122,7 +123,8 @@ gulp.task('default', ['clean'], function () {
 // Watch
 gulp.task('watch', function () {
     
-    
+    // Watch .css files
+    gulp.watch('bower_components/**/*.css', ['base-css']);
 
     // Watch .css files
     gulp.watch('app/css/**/*.css', ['css']);
@@ -134,7 +136,7 @@ gulp.task('watch', function () {
     gulp.watch('app/images/**/*', ['image']);
 
     // Watch bower files
-    gulp.watch('bower.json', ['inject']);
+    gulp.watch('bower.json', ['build']);
 });
 
 //gulp.task('default', ['scripts', 'css', 'inject', 'watch']);

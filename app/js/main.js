@@ -7,7 +7,22 @@ AUTHORS ....... Leandro Rodrigues
 
 */
 
+var detailsOnly = false;
+
 $(document).ready(function () {
+
+
+    $('#techiniques-n-tools').mixItUp({
+        layout: {
+            display: 'flex'
+        },
+
+        animation: {
+            duration: 260,
+            effects: 'fade translateZ(-360px) stagger(34ms)',
+            easing: 'cubic-bezier(.19,1,.22,1)'
+        }
+    });
 
     var $startIconGroup = $('#start-icon-anchor');
 
@@ -19,6 +34,9 @@ $(document).ready(function () {
     $('#dashed-path-group').velocity('transition.fadeIn', { duration: 780, delay: 120 }, customEasing);
 
     $('.logotype').velocity('transition.fadeIn', { duration: 1500, delay: 600 }, customEasing);
+
+
+
 
     var $puzzleIcon = $("#puzzle-icon-group"),
     $wrenchIcon = $("#wrench-icon-group"),
@@ -224,12 +242,13 @@ $(document).ready(function () {
     $('.tool-link').off().click(function (e) {
 
         e.preventDefault();
-        
+
         var $tool = $(this).data('id');
         var $parentModal = $("." + $(this).data('modal'));
         var $toolDetailsContainer = $('.tool-details-container');
         var $toolData = $('.' + $tool + '-tool-data');
         console.log($toolData);
+
         $.Velocity.RunSequence([
             {
                 elements: $parentModal,
@@ -238,19 +257,42 @@ $(document).ready(function () {
             },
             {
                 elements: $toolDetailsContainer,
-                properties: 'transition.slideUpIn',
+                properties: 'transition.shrinkIn',
                 options: { duration: 220, easing: customEasing },
                 sequenceQueue: true
             },
             {
                 elements: $toolData,
-                properties: 'transition.slideUpBigIn',
-                options: { duration: 230, easing: customEasing },
+                properties: 'transition.shrinkIn',
+                options: { duration: 260, easing: customEasing },
                 sequenceQueue: true
             }
 
         ]);
         $toolData.attr('data-origin', $(this).data('modal'));
+    });
+
+    $('.tech-n-tool-link').click(function (e) {
+        e.preventDefault();
+
+        detailsOnly = true;
+
+        var $tool = $(this).data('id');
+        var $toolDetailsContainer = $('.tool-details-container');
+        var $toolData = $('.' + $tool + '-tool-data');
+
+
+
+        var $modalOverlay = $(".mymodal-overlay"),
+           $modalContainer = $(".mymodal-container");
+
+        $.Velocity.RunSequence([
+               { elements: $modalOverlay, properties: 'transition.slideDownIn', options: { duration: 220, easing: customEasing } },
+               { elements: $modalContainer, properties: 'transition.fadeIn', options: { duration: 60, easing: customEasing, sequenceQueue: false } },
+               { elements: $toolDetailsContainer, properties: 'transition.expandIn', options: { duration: 280, easing: customEasing, sequenceQueue: true } },
+               { elements: $toolData, properties: 'transition.expandIn', options: { duration: 320, easing: customEasing, sequenceQueue: false } },
+        ]);
+
     });
 
     $('.video-elic-info').click(function () {
@@ -284,27 +326,50 @@ $(document).ready(function () {
         var $toolDetailsContainer = $('.tool-details-container');
         var $toolData = $('.' + $tool + '-tool-data');
 
-        var $origin = $('.'+ $toolData.data('origin'));
+       
+        if (detailsOnly) {
 
-        $.Velocity.RunSequence([
-            {
-                elements: $toolData,
-                properties: 'transition.slideDownBigOut',
-                options: { duration: 220, easing: customEasing }
-            },
-            {
-                elements: $toolDetailsContainer,
-                properties: 'transition.slideDownOut',
-                options: { duration: 180, easing: customEasing },
-                sequenceQueue: true
-            },
-            {
-                elements: $origin,
-                properties: { translateX: 0, scale: 1 },
-                options: { duration: 220, easing: customEasing },
-                //sequenceQueue: true
-            }
-        ]);
+            $.Velocity.RunSequence([
+                {
+                    elements: $toolData,
+                    properties: 'transition.expandOut',
+                    options: { duration: 320, easing: customEasing }
+                },
+                {
+                    elements: $toolDetailsContainer,
+                    properties: 'transition.expandOut',
+                    options: { duration: 280, easing: customEasing },
+                    sequenceQueue: false
+                }
+            ]);
+
+
+            hideModal();
+            detailsOnly = false;
+        } else {
+
+            var $origin = $('.' + $toolData.data('origin'));
+
+            $.Velocity.RunSequence([
+               {
+                   elements: $toolData,
+                   properties: 'transition.expandOut',
+                   options: { duration: 260, easing: customEasing }
+               },
+               {
+                   elements: $toolDetailsContainer,
+                   properties: 'transition.expandOut',
+                   options: { duration: 180, easing: customEasing }
+                   
+               },
+               {
+                   elements: $origin,
+                   properties: { translateX: 0, scale: 1 },
+                   options: { duration: 220, easing: customEasing },
+                   //sequenceQueue: true
+               }
+            ]);
+        }
 
         e.preventDefault();
 
@@ -352,8 +417,8 @@ $(document).ready(function () {
         $('.sense-modal, .verify-modal, .limit-modal, .conception-modal, .presentation-modal, .feedback-modal, .do-close-modal, .do-cicle-modal')
         .velocity('transition.expandOut', { duration: 200 }, [0.18, 0.89, 0.32, 1.28]);
 
-        $('.sense-modal, .verify-modal, .limit-modal, .conception-modal, .presentation-modal, .feedback-modal, .do-close-modal, .do-cicle-modal')
-        .velocity({ scale: 1, translateX: 0 }, { duration: 0 });
+        //$('.sense-modal, .verify-modal, .limit-modal, .conception-modal, .presentation-modal, .feedback-modal, .do-close-modal, .do-cicle-modal')
+        //.velocity({ scale: 1, translateX: 0 }, { duration: 0 });
 
         $('.mymodal-container').velocity('transition.fadeOut', { duration: 0 }, [0.18, 0.89, 0.32, 1.28]);
         $('.mymodal-overlay').velocity('transition.fadeOut', { duration: 200, delay: 160 }, [0.18, 0.89, 0.32, 1.28]);
