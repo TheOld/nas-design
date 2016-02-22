@@ -1,0 +1,55 @@
+﻿.svg-container {
+    
+    max-width: 400px;
+    margin: 40px auto 0 auto;
+    border:1px solid red;
+    
+}
+
+    .svg-container svg {
+        display: block;
+        
+        max-width: 100%;
+        margin: 0 auto;
+    }
+
+.shape {
+    fill: none;
+    stroke-width: 2;
+    stroke-miterlimit: 10;
+}
+
+.circle {
+    
+    display:none;
+
+   -moz-transform-origin: bottom center;
+    -ms-transform-origin: bottom center;
+    -o-transform-origin: bottom center;
+    -webkit-transform-origin: bottom center;
+    transform-origin: bottom center;
+}
+
+.octagon {
+    
+    display:none;
+
+  -moz-transform-origin: bottom center;
+    -ms-transform-origin: bottom center;
+    -o-transform-origin: bottom center;
+    -webkit-transform-origin: bottom center;
+    transform-origin: bottom center;
+}
+
+.square {
+    
+    width: 70.55px;
+    height: 70.55px;
+    display:block;
+    
+    -moz-transform-origin: bottom center;
+    -ms-transform-origin: bottom center;
+    -o-transform-origin: bottom center;
+    -webkit-transform-origin: bottom center;
+    transform-origin: bottom center;
+}

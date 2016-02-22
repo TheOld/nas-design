@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 220 220" style="enable-background:new 0 0 220 220;" xml:space="preserve">
+<g id="square">
+	
+		<linearGradient id="XMLID_4_" gradientUnits="userSpaceOnUse" x1="74.177" y1="184.725" x2="146.727" y2="184.725" gradientTransform="matrix(-1 0 0 -1 220.9041 369.45)">
+		<stop  offset="0" style="stop-color:#FF0000"/>
+		<stop  offset="0.5" style="stop-color:#ED047B"/>
+		<stop  offset="1" style="stop-color:#A3238E"/>
+	</linearGradient>
+	
+		<rect id="XMLID_1_" x="75.177" y="149.45" style="fill:none;stroke:url(#XMLID_4_);stroke-width:2;stroke-miterlimit:10;" width="70.55" height="70.55"/>
+</g>
+<g id="circle">
+	<linearGradient id="XMLID_6_" gradientUnits="userSpaceOnUse" x1="-0.9444" y1="109.9444" x2="221.1667" y2="109.9444">
+		<stop  offset="0" style="stop-color:#00AA0B"/>
+		<stop  offset="0.5" style="stop-color:#E4E517"/>
+		<stop  offset="1" style="stop-color:#FBB03B"/>
+	</linearGradient>
+	
+		<circle id="XMLID_2_" style="fill:none;stroke:url(#XMLID_6_);stroke-width:2;stroke-miterlimit:10;" cx="110.111" cy="109.944" r="110.056"/>
+</g>
+<g id="octagon">
+	
+		<linearGradient id="XMLID_7_" gradientUnits="userSpaceOnUse" x1="52" y1="111" x2="220" y2="111" gradientTransform="matrix(4.489659e-011 1 -1 4.489659e-011 221 1)">
+		<stop  offset="0" style="stop-color:#5F4B9F"/>
+		<stop  offset="0.5" style="stop-color:#0099AA"/>
+		<stop  offset="1" style="stop-color:#00BF47"/>
+	</linearGradient>
+	<polygon id="XMLID_5_" style="fill:none;stroke:url(#XMLID_7_);stroke-width:2;stroke-miterlimit:10;" points="27,102.849 
+		76.844,54 145.171,54 193,102.849 193,171.156 145.171,220 76.844,220 27,171.156 	"/>
+</g>
+</svg>

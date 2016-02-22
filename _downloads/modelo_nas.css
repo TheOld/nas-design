@@ -1,0 +1,111 @@
+@charset "utf-8";
+	.st0
+{
+	background : #7CCCBF;
+	background : rgba(124, 204, 191, 1);
+	position : absolute ;
+	left : -12px;
+	top : -12px;
+	width : 860px;
+	height : 493px;
+}
+.image8
+{
+	background-image : url(image8.png);
+	background-repeat : no-repeat;
+	position : absolute ;
+	left : 13px;
+	top : 1020px;
+	width : 229px;
+	height : 230px;
+}
+.image7
+{
+	background-image : url(image7.png);
+	background-repeat : no-repeat;
+	position : absolute ;
+	left : 544px;
+	top : 1012px;
+	width : 265px;
+	height : 233px;
+}
+.image6
+{
+	background-image : url(image6.png);
+	background-repeat : no-repeat;
+	position : absolute ;
+	left : 847px;
+	top : 997px;
+	width : 259px;
+	height : 258px;
+}
+.image4
+{
+	background-image : url(image4.png);
+	background-repeat : no-repeat;
+	position : absolute ;
+	left : 1079px;
+	top : 622px;
+	width : 143px;
+	height : 125px;
+}
+.image5
+{
+	background-image : url(image5.png);
+	background-repeat : no-repeat;
+	position : absolute ;
+	left : 282px;
+	top : 1012px;
+	width : 233px;
+	height : 233px;
+}
+.image9
+{
+	background-image : url(image9.png);
+	background-repeat : no-repeat;
+	position : absolute ;
+	left : 108px;
+	top : 594px;
+	width : 629px;
+	height : 307px;
+}
+.image3
+{
+	background-image : url(image3.png);
+	background-repeat : no-repeat;
+	position : absolute ;
+	left : 1253px;
+	top : 610px;
+	width : 139px;
+	height : 140px;
+}
+.image1
+{
+	background-image : url(image1.png);
+	background-repeat : no-repeat;
+	position : absolute ;
+	left : 466px;
+	top : 115px;
+	width : 254px;
+	height : 238px;
+}
+.image
+{
+	background-image : url(image.png);
+	background-repeat : no-repeat;
+	position : absolute ;
+	left : 0px;
+	top : -5px;
+	width : 415px;
+	height : 443px;
+}
+.image2
+{
+	background-image : url(image2.png);
+	background-repeat : no-repeat;
+	position : absolute ;
+	left : 896px;
+	top : 619px;
+	width : 126px;
+	height : 126px;
+}
