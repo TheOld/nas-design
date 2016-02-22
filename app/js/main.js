@@ -240,7 +240,7 @@ $(document).ready(function () {
                 elements: $toolDetailsContainer,
                 properties: 'transition.slideUpIn',
                 options: { duration: 220, easing: customEasing },
-                //sequenceQueue: true
+                sequenceQueue: true
             },
             {
                 elements: $toolData,
@@ -352,8 +352,8 @@ $(document).ready(function () {
         $('.sense-modal, .verify-modal, .limit-modal, .conception-modal, .presentation-modal, .feedback-modal, .do-close-modal, .do-cicle-modal')
         .velocity('transition.expandOut', { duration: 200 }, [0.18, 0.89, 0.32, 1.28]);
 
-        $('.sense-modal, .verify-modal, .limit-modal, .conception-modal, .presentation-modal, .feedback-modal, .do-close-modal, .do-cicle-modal')
-        .velocity({ scale: 1, translateX: 0 }, { duration: 0 });
+        //$('.sense-modal, .verify-modal, .limit-modal, .conception-modal, .presentation-modal, .feedback-modal, .do-close-modal, .do-cicle-modal')
+        //.velocity({ scale: 1, translateX: 0 }, { duration: 0 });
 
         $('.mymodal-container').velocity('transition.fadeOut', { duration: 0 }, [0.18, 0.89, 0.32, 1.28]);
         $('.mymodal-overlay').velocity('transition.fadeOut', { duration: 200, delay: 160 }, [0.18, 0.89, 0.32, 1.28]);
