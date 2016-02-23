@@ -16,11 +16,23 @@ $(document).ready(function () {
         layout: {
             display: 'flex'
         },
+        load: {
+            filter: 'all'
+        },
 
         animation: {
             duration: 260,
             effects: 'fade translateZ(-360px) stagger(34ms)',
             easing: 'cubic-bezier(.19,1,.22,1)'
+        },
+        controls: {
+            toggleFilterButtons: true,
+            toggleLogic: 'and'
+        },
+        callbacks: {
+            onMixEnd: function (state) {
+                console.log(state);
+            }
         }
     });
 
@@ -149,10 +161,10 @@ $(document).ready(function () {
 
     $('#feel-icon-anchor').click(function () {
         if (!$('.feel a').is(':visible')) {
-            $('.feel a').velocity('transition.slideDownIn', { duration: 260, stagger: 40, display: 'flex' }, customEasing);
+            $('.feel a, .feel i').velocity('transition.slideDownIn', { duration: 260, stagger: 40, display: 'flex' }, customEasing);
             $('#feel-icon-bg').addClass('opaque');
         } else {
-            $('.feel a').velocity('transition.slideUpOut', { duration: 200, stagger: 40 }, customEasing);
+            $('.feel a, .feel i').velocity('transition.slideUpOut', { duration: 200, stagger: 40 }, customEasing);
             $('#feel-icon-bg').removeClass('opaque');
         }
 
@@ -160,10 +172,10 @@ $(document).ready(function () {
 
     $('#act-icon-anchor').click(function () {
         if (!$('.act a').is(':visible')) {
-            $('.act a').velocity('transition.slideUpIn', { duration: 260, stagger: 40, display: 'flex' }, customEasing);
+            $('.act a, .act i').velocity('transition.slideUpIn', { duration: 260, stagger: 40, display: 'flex' }, customEasing);
             $('#act-bg').addClass('opaque');
         } else {
-            $('.act a').velocity('transition.slideDownOut', { duration: 200, stagger: 40 }, customEasing);
+            $('.act a, .act i').velocity('transition.slideDownOut', { duration: 200, stagger: 40 }, customEasing);
             $('#act-bg').removeClass('opaque');
         }
 
@@ -171,10 +183,10 @@ $(document).ready(function () {
 
     $('#do-icon-anchor').click(function () {
         if (!$('.do a').is(':visible')) {
-            $('.do a').velocity('transition.slideUpIn', { duration: 260, stagger: 40, display: 'flex' }, customEasing);
+            $('.do a, .do i').velocity('transition.slideUpIn', { duration: 260, stagger: 40, display: 'flex' }, customEasing);
             $('#do-bg, #do-bg-1, #do-bg-2').addClass('opaque');
         } else {
-            $('.do a').velocity('transition.slideDownOut', { duration: 200, stagger: 40 }, customEasing);
+            $('.do a, .do i').velocity('transition.slideDownOut', { duration: 200, stagger: 40 }, customEasing);
             $('#do-bg, #do-bg-1, #do-bg-2').removeClass('opaque');
         }
 
@@ -265,7 +277,7 @@ $(document).ready(function () {
                 elements: $toolData,
                 properties: 'transition.shrinkIn',
                 options: { duration: 260, easing: customEasing },
-                sequenceQueue: true
+                sequenceQueue: false
             }
 
         ]);
